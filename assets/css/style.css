@@ -1,4 +1,4 @@
-/* Bessou Hair Beauty - Modern African Braiding Salon Styles */
+/* Bessou Hair Beauty - Pink, Gold & Black Luxury Theme */
 
 /* Reset and Base Styles */
 * {
@@ -15,7 +15,8 @@ html {
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
-    color: #2c3e50;
+    color: var(--white);
+    background: var(--black);
     overflow-x: hidden;
 }
 
@@ -42,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
-    color: var(--text-dark);
+    color: var(--white);
 }
 
 h1 { font-size: 3.5rem; }
@@ -54,7 +55,7 @@ h6 { font-size: 1rem; }
 
 p {
     margin-bottom: 1rem;
-    color: var(--text-light);
+    color: var(--soft-pink);
 }
 
 /* Container */
@@ -81,7 +82,7 @@ p {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--gold), var(--deep-pink));
+    background: var(--hot-pink);
     color: var(--white);
     box-shadow: var(--shadow);
 }
@@ -89,21 +90,20 @@ p {
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-hover);
-    background: linear-gradient(135deg, var(--deep-pink), var(--gold));
+    background: var(--deep-pink);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--gold);
-    border: 2px solid var(--gold);
+    color: var(--hot-pink);
+    border: 2px solid var(--hot-pink);
 }
 
 .btn-secondary:hover {
-    background: var(--gold);
+    background: var(--hot-pink);
     color: var(--white);
     transform: translateY(-2px);
 }
-
 
 .nav-logo-img {
     height: 60px;
@@ -119,7 +119,8 @@ p {
 
 /* Header */
 .header {
-    background: var(--white);
+    background: var(--black);
+    border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow);
     position: fixed;
     width: 100%;
@@ -151,13 +152,13 @@ p {
 
 .nav-menu a {
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--white);
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-menu a:hover {
-    color: var(--gold);
+    color: var(--hot-pink);
 }
 
 .hamburger {
@@ -170,7 +171,7 @@ p {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--text-dark);
+    background: var(--white);
     transition: all 0.3s ease;
 }
 
@@ -191,17 +192,14 @@ p {
 
 .hero h1 {
     font-size: 3.5rem;
-    background: linear-gradient(135deg, var(--gold), var(--hot-pink));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--white);
     margin-bottom: 1.5rem;
     line-height: 1.1;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: var(--text-light);
+    color: var(--soft-pink);
     margin-bottom: 2rem;
 }
 
@@ -229,13 +227,13 @@ p {
 }
 
 .section-header h2 {
-    color: var(--hot-pink);
+    color: var(--white);
     margin-bottom: 1rem;
 }
 
 .section-header p {
     font-size: 1.1rem;
-    color: var(--text-light);
+    color: var(--soft-pink);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -243,7 +241,7 @@ p {
 /* Services Section */
 .services {
     padding: 100px 0;
-    background: var(--cream);
+    background: var(--off-black);
 }
 
 .services-grid {
@@ -253,7 +251,8 @@ p {
 }
 
 .service-card {
-    background: var(--white);
+    background: linear-gradient(145deg, var(--off-black), var(--black));
+    border: 1px solid var(--border-color);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -264,6 +263,7 @@ p {
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
+    border-color: var(--hot-pink);
 }
 
 .service-card img {
@@ -277,7 +277,7 @@ p {
 }
 
 .service-content h3 {
-    color: var(--hot-pink);
+    color: var(--white);
     margin-bottom: 0.5rem;
 }
 
@@ -294,19 +294,20 @@ p {
 }
 
 .price-label {
-    color: var(--text-light);
+    color: var(--soft-pink);
     font-size: 0.9rem;
 }
 
 .price {
     color: var(--gold);
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 /* Gallery Section */
 .gallery {
     padding: 100px 0;
+    background: var(--black);
 }
 
 .gallery-grid {
@@ -363,7 +364,7 @@ p {
 /* About Section */
 .about {
     padding: 100px 0;
-    background: var(--cream);
+    background: var(--off-black);
 }
 
 .about-content {
@@ -374,7 +375,7 @@ p {
 }
 
 .about-text h2 {
-    color: var(--hot-pink);
+    color: var(--white);
     margin-bottom: 1.5rem;
 }
 
@@ -396,19 +397,19 @@ p {
 }
 
 .feature i {
-    color: var(--gold);
+    color: var(--hot-pink);
     font-size: 1.5rem;
     margin-top: 0.25rem;
 }
 
 .feature h4 {
-    color: var(--hot-pink);
+    color: var(--white);
     margin-bottom: 0.5rem;
 }
 
 .feature p {
     margin: 0;
-    color: var(--text-light);
+    color: var(--soft-pink);
 }
 
 .about-image img {
@@ -421,7 +422,7 @@ p {
 /* Booking Section */
 .booking {
     padding: 100px 0;
-    background: var(--white);
+    background: var(--black);
 }
 
 .booking-content {
@@ -431,7 +432,7 @@ p {
 }
 
 .booking-info h3 {
-    color: var(--hot-pink);
+    color: var(--white);
     margin-bottom: 2rem;
 }
 
@@ -445,29 +446,29 @@ p {
     align-items: flex-start;
     gap: 1rem;
     padding: 1.5rem;
-    background: var(--cream);
+    background: var(--off-black);
     border-radius: 10px;
-    border-left: 4px solid var(--gold);
+    border-left: 4px solid var(--hot-pink);
 }
 
 .term-item i {
-    color: var(--gold);
+    color: var(--hot-pink);
     font-size: 1.5rem;
     margin-top: 0.25rem;
 }
 
 .term-item h4 {
-    color: var(--hot-pink);
+    color: var(--white);
     margin-bottom: 0.5rem;
 }
 
 .term-item p {
     margin: 0;
-    color: var(--text-light);
+    color: var(--soft-pink);
 }
 
 .booking-calendar h3 {
-    color: var(--hot-pink);
+    color: var(--white);
     margin-bottom: 1.5rem;
 }
 
@@ -481,7 +482,7 @@ p {
 /* Contact Section */
 .contact {
     padding: 100px 0;
-    background: var(--cream);
+    background: var(--off-black);
 }
 
 .contact-content {
@@ -498,19 +499,19 @@ p {
 }
 
 .contact-item i {
-    color: var(--gold);
+    color: var(--hot-pink);
     font-size: 1.5rem;
     margin-top: 0.25rem;
 }
 
 .contact-item h4 {
-    color: var(--hot-pink);
+    color: var(--white);
     margin-bottom: 0.5rem;
 }
 
 .contact-item p {
     margin: 0;
-    color: var(--text-light);
+    color: var(--soft-pink);
 }
 
 .social-links {
@@ -525,7 +526,7 @@ p {
     justify-content: center;
     width: 45px;
     height: 45px;
-    background: var(--gold);
+    background: var(--hot-pink);
     color: var(--white);
     border-radius: 50%;
     text-decoration: none;
@@ -539,7 +540,8 @@ p {
 
 /* Contact Form */
 .contact-form {
-    background: var(--white);
+    background: var(--off-black);
+    border: 1px solid var(--border-color);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: var(--shadow);
@@ -558,13 +560,15 @@ p {
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    background: var(--black);
+    color: var(--white);
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--gold);
+    border-color: var(--hot-pink);
 }
 
 .form-group textarea {
@@ -573,8 +577,9 @@ p {
 
 /* Footer */
 .footer {
-    background: var(--hot-pink);
+    background: var(--off-black);
     color: var(--white);
+    border-top: 1px solid var(--border-color);
     padding: 60px 0 20px;
 }
 
@@ -587,7 +592,7 @@ p {
 
 .footer-section h3,
 .footer-section h4 {
-    color: var(--soft-pink);
+    color: var(--hot-pink);
     margin-bottom: 1rem;
 }
 
@@ -611,7 +616,7 @@ p {
 }
 
 .footer-section ul li a:hover {
-    color: var(--soft-pink);
+    color: var(--hot-pink);
 }
 
 .footer-section .contact-item {
@@ -623,19 +628,19 @@ p {
 }
 
 .footer-section .contact-item i {
-    color: var(--soft-pink);
+    color: var(--hot-pink);
     font-size: 1rem;
 }
 
 .footer-bottom {
-    border-top: 1px solid var(--deep-pink);
+    border-top: 1px solid var(--border-color);
     padding-top: 2rem;
     text-align: center;
     color: var(--soft-pink);
 }
 
 .footer-bottom a {
-    color: var(--soft-pink);
+    color: var(--hot-pink);
     text-decoration: none;
 }
 
@@ -655,7 +660,8 @@ p {
         top: 100%;
         left: 0;
         right: 0;
-        background: var(--white);
+        background: var(--black);
+        border-top: 1px solid var(--border-color);
         flex-direction: column;
         padding: 1rem 2rem;
         box-shadow: var(--shadow);
@@ -766,3 +772,8 @@ p {
 .mb-2 { margin-bottom: 2rem; }
 .mt-1 { margin-top: 1rem; }
 .mt-2 { margin-top: 2rem; }
+
+/* Service image placeholders shown cleanly when images missing */
+.service-card img {
+    background: linear-gradient(135deg, var(--deep-pink), var(--off-black));
+}
