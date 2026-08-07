@@ -270,6 +270,7 @@ p {
     width: 100%;
     height: 240px;
     object-fit: cover;
+    display: block;
 }
 
 .service-content {
@@ -774,6 +775,4 @@ p {
 .mt-2 { margin-top: 2rem; }
 
 /* Service image placeholders shown cleanly when images missing */
-.service-card img {
-    background: linear-gradient(135deg, var(--deep-pink), var(--off-black));
-}
+
